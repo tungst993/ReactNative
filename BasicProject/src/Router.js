@@ -1,6 +1,7 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import HomeScreen from './HomeScreen'
 import Calculator from './Calculator'
+import FlipImage from './FlipImage'
 
 
 export default SiderBar = createStackNavigator(
@@ -15,6 +16,12 @@ export default SiderBar = createStackNavigator(
       screen: Calculator,
       navigationOptions: {
         title: 'Calculator'
+      }
+    },
+    FlipImage: {
+      screen: FlipImage,
+      navigationOptions: {
+        title: 'FlipImage'
       }
     }
   }, {

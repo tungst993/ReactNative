@@ -8,9 +8,15 @@ export default class HomeScreen extends React.Component {
                 <Text style={styles.homeScreenTitle} >React Native Basic</Text>
                 <TouchableOpacity
                     onPress={() => this.props.navigation.navigate('Calculator')}
-                    style={{ backgroundColor: 'green' }}
+                    style={{ backgroundColor: 'green', marginTop: 10 }}
                 >
                     <Text style={styles.item}>Calculator</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    onPress={() => this.props.navigation.navigate('FlipImage')}
+                    style={{ backgroundColor: 'green', marginTop: 10 }}
+                >
+                    <Text style={styles.item}>Flip Image</Text>
                 </TouchableOpacity>
             </View>
         );
